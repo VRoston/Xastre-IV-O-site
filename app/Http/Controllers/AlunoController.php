@@ -30,7 +30,7 @@ class AlunoController extends Controller
         $aluno->nome = $request->nome;
         $aluno->materias = $request->materias;
         $aluno->filmes = $request->filmes;
-        $aluno->imagem = $request->imagem;
+    
 
         $aluno->save();
 

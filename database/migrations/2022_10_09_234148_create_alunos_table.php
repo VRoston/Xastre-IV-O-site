@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string("nome");
             $table->string("materias");
             $table->string("filmes");
-            $table->string("imagem");
             
         });
     }
