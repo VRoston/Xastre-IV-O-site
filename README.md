@@ -1,4 +1,4 @@
-# Projeto 1 Laravel
+<h1 align="center"> # Projeto 1 Laravel
 
 ### Passo a passo
 Clone Repositório criado a partir do template, entre na pasta e execute os comandos abaixo:
