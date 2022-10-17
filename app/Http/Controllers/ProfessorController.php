@@ -28,6 +28,12 @@ class ProfessorController extends Controller
 
         $professor->save();
 
-        return redirect('/professor');
+        return redirect('/professor')->with('msg', 'Cadastro criado com sucesso!');
+    }
+
+    public function show($id){
+        $professor = Professor::findOrFail($id);
+
+        return view('professor.show', ['professor' => $professor]);
     }
 }

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('titulo','PUCFlix')
+@section('titulo','Cadastro')
 
 @section('conteudo')
 

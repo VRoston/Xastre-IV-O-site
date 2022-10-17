@@ -29,7 +29,13 @@ class AlunoController extends Controller
 
         $aluno->save();
 
-        return redirect('/aluno');
+        return redirect('/aluno')->with('msg', 'Cadastro criado com sucesso!');
+    }
+
+    public function show($id){
+        $aluno = Aluno::findOrFail($id);
+
+        return view('aluno.show', ['aluno' => $aluno]);
     }
 }
 
