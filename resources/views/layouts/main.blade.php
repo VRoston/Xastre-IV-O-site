@@ -36,6 +36,15 @@
             </div>     
      </nav>
     </header>
-    @yield("conteudo") 
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                 <p class="msg">{{ session('msg') }}</p>
+                @endif
+                @yield("conteudo")
+            </div>            
+        </div>
+    </main>
 </body>
 </html>
