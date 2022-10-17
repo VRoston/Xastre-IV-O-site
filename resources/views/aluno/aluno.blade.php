@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('titulo','PUCFlix')
+@section('titulo','Aluno')
 
 @section('conteudo')
 <h1 class="text-center">Alunos</h1>
@@ -17,19 +17,14 @@
         @foreach($alunos as $aluno)
         <div class="card col-md-3">
             <div class="card-body">
-                <p class="card-date">15/10/2022</p>
                 <h5 class="card-title">{{ $aluno->nome}}</h5>
-                <p class="cards-materia">X materia</p>
-                <a href="#" class="btn btn-primary">Mais informações</a>
+                <p class="cards-materia">Materia: {{ $aluno->materia}}</p>
+                <p class="cards-filme">Filme: {{ $aluno->filme}}</p>
+                <a href="/aluno/{{ $aluno->id }}" class="btn btn-primary">Mais informações</a>
             </div>           
         </div>    
         @endforeach
     </div>
 </div>
-    @foreach($alunos as $aluno)
-        <p>{{ $aluno->nome}} , {{ $aluno->materia}} , {{ $aluno->filme}}</p>
-    @endforeach
-
-
-
+    
 @endsection

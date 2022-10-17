@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('titulo','PUCFlix')
+@section('titulo','Professor')
 
 @section('conteudo')
 <h1 class="text-center">Professores</h1>
@@ -17,17 +17,13 @@
         @foreach($professors as $professor)
         <div class="card col-md-3">
             <div class="card-body">
-                <p class="card-date">15/10/2022</p>
                 <h5 class="card-title">{{ $professor->nome}}</h5>
                 <p class="cards-materia">{{ $professor->materia}}</p>
-                <a href="#" class="btn btn-primary">Mais informações</a>
+                <a href="/professor/{{ $professor->id }}" class="btn btn-primary">Mais informações</a>
             </div>           
         </div>    
         @endforeach
     </div>
 </div>
 
-    @foreach($professors as $professor)
-        <p>{{ $professor->nome}} , {{ $professor->materia}}</p>
-    @endforeach
 @endsection
