@@ -3,7 +3,7 @@
 @section('titulo','PUCFlix')
 
 @section('conteudo')
-<h1>Alunos</h1>
+<h1 class="text-center">Alunos</h1>
 <a href="/aluno/cadastro">Criar cadastro</a>
 <div id="search-container" class="col-md-12">
     <h2>Busque um aluno</h2>     

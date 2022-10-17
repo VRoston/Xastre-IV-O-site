@@ -3,6 +3,6 @@
 @section('titulo','PUCFlix')
 
 @section('conteudo')
-<h1>Cadastro de Alunos</h1>
+<h1 class="text-center">Cadastro de Alunos</h1>
     
 @endsection
