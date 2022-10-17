@@ -10,6 +10,7 @@ Route::get('/', function () {
 
 Route::get('/aluno', [AlunoController::class, 'index']);
 Route::get('/aluno/cadastro', [AlunoController::class, 'cadastro']);
+Route::post('/aluno', [AlunoController::class, 'store']);
 
 
 use App\Http\Controllers\MateriaController;

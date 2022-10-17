@@ -27,7 +27,4 @@
     </div>
 </div>
 
-    @foreach($professors as $professor)
-        <p>{{ $professor->nome}} , {{ $professor->materia}}</p>
-    @endforeach
 @endsection

@@ -18,5 +18,18 @@ class AlunoController extends Controller
     public function cadastro(){
         return view('aluno.cadastro'); 
     }
+
+    public function store(Request $request){
+
+        $aluno = new Aluno;
+
+        $aluno->nome = $request->nome;
+        $aluno->materia = $request->materia;
+        $aluno->filme = $request->filme;
+
+        $aluno->save();
+
+        return redirect('/aluno');
+    }
 }
 

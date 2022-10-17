@@ -18,6 +18,7 @@ class ProfessorController extends Controller
     public function cadastro(){
         return view('professor.cadastro');
     }
+    
     public function store(Request $request){
 
         $professor = new Professor;

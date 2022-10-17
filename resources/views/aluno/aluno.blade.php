@@ -17,19 +17,14 @@
         @foreach($alunos as $aluno)
         <div class="card col-md-3">
             <div class="card-body">
-                <p class="card-date">15/10/2022</p>
                 <h5 class="card-title">{{ $aluno->nome}}</h5>
-                <p class="cards-materia">X materia</p>
+                <p class="cards-materia">Materia: {{ $aluno->materia}}</p>
+                <p class="cards-filme">Filme: {{ $aluno->filme}}</p>
                 <a href="#" class="btn btn-primary">Mais informações</a>
             </div>           
         </div>    
         @endforeach
     </div>
 </div>
-    @foreach($alunos as $aluno)
-        <p>{{ $aluno->nome}} , {{ $aluno->materia}} , {{ $aluno->filme}}</p>
-    @endforeach
-
-
-
+    
 @endsection
